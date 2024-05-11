@@ -263,6 +263,7 @@
           <!-- / Navbar -->
 
           <!-- Coding Here -->
+
           <!-- Content wrapper -->
           <div class="content-wrapper">
             <!-- Content -->
@@ -278,15 +279,15 @@
                   class="btn btn-primary mb-3"
                   data-bs-toggle="modal"
                   data-bs-target="#addModal"
-                >Add Project
+                >Add Report
                 </button>
                   <div class="table-responsive text-nowrap">
                     <table class="table table-bordered">
                       <thead>
                         <tr>
                           <th>Project Name</th>
-                          <th>Deadline</th>
-                          <th>PIC</th>
+                          <th>Member</th>
+                          <th>Task Name</th>
                           <th>Status</th>
                           <th>Actions</th>
                         </tr>
@@ -296,41 +297,8 @@
                           <td>
                             <i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Project A</strong>
                           </td>
-                          <td>2024-07-31</td>
-                          <td>Fauziah</td>
-                          <td><span class="badge bg-label-primary me-1">On Track</span></td>
-                          <td>
-                            <div class="dropdown">
-                              <button
-                                type="button"
-                                class="btn btn-primary"
-                                data-bs-toggle="modal"
-                                data-bs-target="#showModal"
-                              >Show
-                              </button>
-                              <button
-                              type="button"
-                              class="btn btn-warning"
-                              data-bs-toggle="modal"
-                              data-bs-target="#editModal"
-                              >Edit
-                              </button>
-                              <button
-                                type="button"
-                                class="btn btn-danger"
-                                data-bs-toggle="modal"
-                                data-bs-target="#deleteModal"
-                              >Delete
-                              </button>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Project B</strong>
-                          </td>
-                          <td>2024-03-22</td>
-                          <td>Marcel</td>
+                          <td>Huda</td>
+                          <td>Coding 1-1</td>
                           <td><span class="badge bg-label-success me-1">Completed</span></td>
                           <td>
                             <div class="dropdown">
@@ -360,11 +328,77 @@
                         </tr>
                         <tr>
                           <td>
-                            <i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Project C</strong>
+                            <i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Project A</strong>
                           </td>
-                          <td>2024-04-22</td>
-                          <td>Azalia</td>
-                          <td><span class="badge bg-label-warning me-1">Delayed</span></td>
+                          <td>Abhi</td>
+                          <td>Coding 1-2</td>
+                          <td><span class="badge bg-label-info me-1">Completed with Notes</span></td>
+                          <td>
+                            <div class="dropdown">
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#showModal"
+                              >Show
+                              </button>
+                              <button
+                              type="button"
+                              class="btn btn-warning"
+                              data-bs-toggle="modal"
+                              data-bs-target="#editModal"
+                              >Edit
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-danger"
+                                data-bs-toggle="modal"
+                                data-bs-target="#deleteModal"
+                              >Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Project A</strong>
+                          </td>
+                          <td>Sania</td>
+                          <td>Coding 1-3</td>
+                          <td><span class="badge bg-label-warning me-1">Need Confirmation</span></td>
+                          <td>
+                            <div class="dropdown">
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#showModal"
+                              >Show
+                              </button>
+                              <button
+                              type="button"
+                              class="btn btn-warning"
+                              data-bs-toggle="modal"
+                              data-bs-target="#editModal"
+                              >Edit
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-danger"
+                                data-bs-toggle="modal"
+                                data-bs-target="#deleteModal"
+                              >Delete
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Project A</strong>
+                          </td>
+                          <td>Rahma</td>
+                          <td>Coding 1-4</td>
+                          <td><span class="badge bg-label-warning me-1">Need Confirmation</span></td>
                           <td>
                             <div class="dropdown">
                               <button
@@ -403,7 +437,7 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel1">Add Project</h5>
+                      <h5 class="modal-title" id="exampleModalLabel1">Add Report</h5>
                       <button
                         type="button"
                         class="btn-close"
@@ -414,7 +448,17 @@
                     <div class="modal-body">
                       <div class="row">
                         <div class="col mb-3">
-                          <label for="nameBasic" class="form-label">Project Name</label>
+                          <label for="exampleFormControlSelect1" class="form-label">Choose Project</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Project A</option>
+                            <option>Project B</option>
+                            <option>Project C</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col mb-3">
+                          <label for="nameBasic" class="form-label">Task Name</label>
                           <input type="text" id="nameBasic" class="form-control" placeholder="Enter Project Name" />
                         </div>
                       </div>
@@ -426,35 +470,22 @@
                       </div>
                       <div class="row">
                         <div class="col mb-3">
-                          <label for="nameBasic" class="form-label">Deadline</label>
-                          <input type="date" id="nameBasic" class="form-control" placeholder="Enter Name" />
-                        </div>
-                      </div>
-                      <div class="row g-2">
-                        <div class="col mb-0">
                           <label for="exampleFormControlSelect1" class="form-label">Choose Status</label>
                           <select class="form-control" id="exampleFormControlSelect1">
                             <option>On Track</option>
                             <option>Delayed</option>
                             <option>Completed</option>
+                            <option>Completed with Notes</option>
+                            <option>Need Confirmation</option>
                           </select>
-                        </div>
-                        <div class="col mb-0">
-                          <label for="nameBasic" class="form-label">PIC</label>
-                          <input type="text" id="nameBasic" class="form-control" placeholder="Enter PIC Name" />
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col mt-3 mb-0">
-                          <label for="exampleFormControlSelect2">Member</label>
-                          <select multiple class="form-control" id="exampleFormControlSelect2">
-                            <option>Huda</option>
-                            <option>Abhi</option>
-                            <option>Sania</option>
-                            <option>Rahma</option>
-                            <option>Marcel</option>
-                            <option>Anri</option>
-                          </select>
+                        <div class="col mb-3">
+                          <label for="exampleFormControlSelect1" class="form-label">Choose File</label>
+                          <div class="input-group">
+                            <input type="file" class="form-control" id="inputGroupFile02">
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -472,7 +503,7 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel1">Detail Project</h5>
+                      <h5 class="modal-title" id="exampleModalLabel1">Detail Report</h5>
                       <button
                         type="button"
                         class="btn-close"
@@ -484,46 +515,44 @@
                       <div class="row">
                         <div class="col mb-3">
                           <label for="nameBasic" class="form-label">Project Name</label>
-                          <input type="text" id="nameBasic" class="form-control" value="Project A" disabled />
+                          <select class="form-control" id="exampleFormControlSelect1" disabled>
+                            <option selected>Project A</option>
+                            <option>Project B</option>
+                            <option>Project C</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col mb-3">
+                          <label for="nameBasic" class="form-label">Task Name</label>
+                          <input type="text" id="nameBasic" class="form-control" value="Coding 1-1" disabled />
                         </div>
                       </div>
                       <div class="row">
                         <div class="col mb-3">
                           <label for="exampleFormControlTextarea1">Description</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" disabled>Job Code IND-A1-01</textarea>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" disabled>Notes: Image 001.png material not found</textarea>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col mb-3">
-                          <label for="nameBasic" class="form-label">Deadline</label>
-                          <input type="date" id="nameBasic" class="form-control" value="2024-03-21" disabled/>
-                        </div>
-                      </div>
-                      <div class="row g-2">
-                        <div class="col mb-0">
                           <label for="exampleFormControlSelect1" class="form-label">Status</label>
                           <select class="form-control" id="exampleFormControlSelect1" disabled> 
-                            <option selected>On Track</option>
+                            <option>On Track</option>
                             <option>Delayed</option>
-                            <option>Completed</option>
+                            <option selected>Completed</option>
+                            <option>Completed with Notes</option>
+                            <option>Need Confirmation</option>
                           </select>
-                        </div>
-                        <div class="col mb-0">
-                          <label for="nameBasic" class="form-label">PIC</label>
-                          <input type="text" id="nameBasic" class="form-control" value="Fauziah" disabled/>
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col mt-3 mb-0">
-                          <label for="exampleFormControlSelect2">Member</label>
-                          <select multiple class="form-control" id="exampleFormControlSelect2" disabled>
-                            <option selected>Huda</option>
-                            <option selected>Abhi</option>
-                            <option selected>Sania</option>
-                            <option selected>Rahma</option>
-                            <option>Marcel</option>
-                            <option>Anri</option>
-                          </select>
+                        <div class="col mb-3">
+                          <label for="exampleFormControlSelect1" class="form-label">File</label>
+                          <div class="input-group mb-0">
+                          <input type="text" id="nameBasic" class="form-control" value="CP1_1_Huda.xlsx" aria-describedby="button-addon2" disabled>
+                          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Download</button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -540,7 +569,7 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel1">Edit Project</h5>
+                      <h5 class="modal-title" id="exampleModalLabel1">Edit Report</h5>
                       <button
                         type="button"
                         class="btn-close"
@@ -552,46 +581,43 @@
                       <div class="row">
                         <div class="col mb-3">
                           <label for="nameBasic" class="form-label">Project Name</label>
-                          <input type="text" id="nameBasic" class="form-control" value="Project A" />
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option selected>Project A</option>
+                            <option>Project B</option>
+                            <option>Project C</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col mb-3">
+                          <label for="nameBasic" class="form-label">Task Name</label>
+                          <input type="text" id="nameBasic" class="form-control" value="Coding 1-1" />
                         </div>
                       </div>
                       <div class="row">
                         <div class="col mb-3">
                           <label for="exampleFormControlTextarea1">Description</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Job Code IND-A1-01</textarea>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Notes: Image 001.png material not found</textarea>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col mb-3">
-                          <label for="nameBasic" class="form-label">Deadline</label>
-                          <input type="date" id="nameBasic" class="form-control" value="2024-03-21" />
-                        </div>
-                      </div>
-                      <div class="row g-2">
-                        <div class="col mb-0">
-                          <label for="exampleFormControlSelect1" class="form-label">Choose Status</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
-                            <option selected>On Track</option>
+                          <label for="exampleFormControlSelect1" class="form-label">Change Status</label>
+                          <select class="form-control" id="exampleFormControlSelect1"> 
+                            <option>On Track</option>
                             <option>Delayed</option>
-                            <option>Completed</option>
+                            <option selected>Completed</option>
+                            <option>Completed with Notes</option>
+                            <option>Need Confirmation</option>
                           </select>
-                        </div>
-                        <div class="col mb-0">
-                          <label for="nameBasic" class="form-label">PIC</label>
-                          <input type="text" id="nameBasic" class="form-control" value="Fauziah" />
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col mt-3 mb-0">
-                          <label for="exampleFormControlSelect2">Member</label>
-                          <select multiple class="form-control" id="exampleFormControlSelect2">
-                            <option selected>Huda</option>
-                            <option selected>Abhi</option>
-                            <option selected>Sania</option>
-                            <option selected>Rahma</option>
-                            <option>Marcel</option>
-                            <option>Anri</option>
-                          </select>
+                        <div class="col mb-3">
+                          <label for="exampleFormControlSelect1" class="form-label">Change File</label>
+                          <div class="input-group">
+                            <input type="file" class="form-control" id="input_edit">
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -677,5 +703,20 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+      // Get a reference to our file input
+      const fileInput = document.getElementById('input_edit');
+  
+      // Create a new File object
+      const myFile = new File(['Hello World!'], 'CP1_1_Huda.xlsx', {
+          type: 'text/plain',
+          lastModified: new Date(),
+      });
+  
+      // Now let's create a DataTransfer to get a FileList
+      const dataTransfer = new DataTransfer();
+      dataTransfer.items.add(myFile);
+      fileInput.files = dataTransfer.files;
+  </script>
   </body>
 </html>
