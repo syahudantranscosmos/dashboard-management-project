@@ -278,7 +278,7 @@
                   class="btn btn-primary mb-3"
                   data-bs-toggle="modal"
                   data-bs-target="#addModal"
-                >Add Project
+                >Add Task
                 </button>
                   <div class="table-responsive text-nowrap">
                     <table class="table table-bordered">
@@ -436,7 +436,7 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel1">Add Project</h5>
+                      <h5 class="modal-title" id="exampleModalLabel1">Add Task</h5>
                       <button
                         type="button"
                         class="btn-close"
@@ -449,6 +449,7 @@
                         <div class="col mb-3">
                           <label for="exampleFormControlSelect1" class="form-label">Project Name</label>
                           <select class="form-control" id="exampleFormControlSelect1">
+                            <option value="" disabled selected>Choose Project</option>
                             <option>Project A</option>
                             <option>Project B</option>
                             <option>Project C</option>
@@ -457,7 +458,7 @@
                       </div>
                       <div class="row">
                         <div class="col mb-3">
-                          <label for="exampleFormControlTextarea1">Project Task</label>
+                          <label for="exampleFormControlTextarea1" class="form-label">Project Task</label>
                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                       </div>
@@ -471,6 +472,7 @@
                         <div class="col mb-0">
                           <label for="exampleFormControlSelect1" class="form-label">Status</label>
                           <select class="form-control" id="exampleFormControlSelect1">
+                            <option value="" disabled selected>Choose Status</option>
                             <option>On Going</option>
                             <option>Done</option>
                           </select>
@@ -478,7 +480,7 @@
                       </div>
                       <div class="row">
                         <div class="col mt-3 mb-0">
-                          <label for="exampleFormControlSelect2">Member</label>
+                          <label for="exampleFormControlSelect2" class="form-label">Member</label>
                           <select multiple class="form-control" id="exampleFormControlSelect2">
                             <option>Huda</option>
                             <option>Abhi</option>
@@ -486,7 +488,7 @@
                             <option>Rahma</option>
                           </select>
                         </div>
-                        <div class="col mb-0">
+                        <div class="col mt-3 mb-0">
                           <label for="nameBasic" class="form-label">File</label>
                           <div class="input-group"><input type="file" class="form-control" id="inputGroupFile02"></div>
                         </div>
@@ -506,7 +508,7 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel1">Detail Project</h5>
+                      <h5 class="modal-title" id="exampleModalLabel1">Detail Task</h5>
                       <button
                         type="button"
                         class="btn-close"
@@ -523,7 +525,7 @@
                       </div>
                       <div class="row">
                         <div class="col mb-3">
-                          <label for="exampleFormControlTextarea1">Project Task</label>
+                          <label for="exampleFormControlTextarea1" class="form-label">Project Task</label>
                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" disabled>Coding Page 1-1</textarea>
                         </div>
                       </div>
@@ -544,7 +546,7 @@
                       </div>
                       <div class="row">
                         <div class="col mt-3 mb-0">
-                          <label for="exampleFormControlSelect2">Member</label>
+                          <label for="exampleFormControlSelect2" class="form-label">Member</label>
                           <select multiple class="form-control" id="exampleFormControlSelect2" disabled>
                             <option selected>Huda</option>
                             <option>Abhi</option>
@@ -552,7 +554,7 @@
                             <option>Rahma</option>
                           </select>
                         </div>
-                        <div class="col mb-0">
+                        <div class="col mt-3 mb-0">
                           <label for="nameBasic" class="form-label">File</label>
                           <div class="input-group mb-0">
                           <input type="text" id="nameBasic" class="form-control" value="Request01.xlsx" aria-describedby="button-addon2" disabled>
@@ -574,7 +576,7 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel1">Edit Project</h5>
+                      <h5 class="modal-title" id="exampleModalLabel1">Edit Task</h5>
                       <button
                         type="button"
                         class="btn-close"
@@ -585,17 +587,18 @@
                     <div class="modal-body">
                       <div class="row">
                         <div class="col mb-3">
-                          <label for="exampleFormControlSelect1" class="form-label">Project Name</label>
+                          <label for="nameBasic" class="form-label">Project Name</label>
                           <select class="form-control" id="exampleFormControlSelect1">
                             <option selected>Project A</option>
                             <option>Project B</option>
                             <option>Project C</option>
+                          </select>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col mb-3">
-                          <label for="exampleFormControlTextarea1">Project Task</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Coding Page 1-1</textarea>
+                          <label for="nameBasic" class="form-label">Project Task</label>
+                          <input type="text" id="nameBasic" class="form-control" value="Coding Page 1-1" />
                         </div>
                       </div>
                       <div class="row">
@@ -615,7 +618,7 @@
                       </div>
                       <div class="row">
                         <div class="col mt-3 mb-0">
-                          <label for="exampleFormControlSelect2">Member</label>
+                          <label for="exampleFormControlSelect2" class="form-label">Member</label>
                           <select multiple class="form-control" id="exampleFormControlSelect2">
                             <option selected>Huda</option>
                             <option>Abhi</option>
@@ -623,9 +626,9 @@
                             <option>Rahma</option>
                           </select>
                         </div>
-                        <div class="col mb-0">
+                        <div class="col mt-3 mb-0">
                           <label for="nameBasic" class="form-label">File</label>
-                          <div class="input-group"><input type="file" class="form-control"></div>
+                          <div class="input-group"><input type="file" id="input_edit" class="form-control"></div>
                         </div>
                       </div>
                     </div>
@@ -709,5 +712,20 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+      // Get a reference to our file input
+      const fileInput = document.getElementById('input_edit');
+  
+      // Create a new File object
+      const myFile = new File(['Hello World!'], 'Request01.xlsx', {
+          type: 'text/plain',
+          lastModified: new Date(),
+      });
+  
+      // Now let's create a DataTransfer to get a FileList
+      const dataTransfer = new DataTransfer();
+      dataTransfer.items.add(myFile);
+      fileInput.files = dataTransfer.files;
+  </script>
   </body>
 </html>
