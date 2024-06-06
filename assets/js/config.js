@@ -25,3 +25,15 @@ let config = {
     borderColor: '#eceef1'
   }
 };
+
+{/* <label for="mySelect2">Select an option</label>
+<select id="mySelect2" class="form-control" name="test[]" style="width: 100%;"
+    multiple="multiple">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+</select> */}
+
+// $('#addMemberSelect2').select2({
+//   dropdownParent: $('#addModal .modal-content')
+// });
